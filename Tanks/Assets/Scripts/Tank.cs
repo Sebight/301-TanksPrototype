@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Tank : MonoBehaviour
 {
-    public IMovementFactory movementFactory;
+    public MovementFactory movementFactory;
     public IMovement Movement;
 
     public Rigidbody rb;
@@ -14,7 +14,7 @@ public class Tank : MonoBehaviour
     
     public void ChangeMovement<T>() where T : MonoBehaviour
     {
-        Movement = (IMovement)IMovementFactory.Create<T>();
+        Movement = (IMovement)MovementFactory.Create<T>();
     }
 }
 

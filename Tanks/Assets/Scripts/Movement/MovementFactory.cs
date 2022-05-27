@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IMovementFactory : MonoBehaviour
+public class MovementFactory : MonoBehaviour
 {
     public static GameObject gameObjectReference;
     void Start() => gameObjectReference = gameObject;
